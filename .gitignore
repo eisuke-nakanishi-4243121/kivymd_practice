@@ -1,0 +1,27 @@
+# Buildozer関連
+.buildozer/
+bin/
+*.apk
+
+# Python関連
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# 環境変数
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.bak
+*~
+
+# Claude Code
+.claude/
+.claude_history
+CLAUDE.md
