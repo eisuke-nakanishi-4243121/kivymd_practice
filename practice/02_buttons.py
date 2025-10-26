@@ -12,7 +12,7 @@
 - ボタン押下でラベルのテキスト変更
 
 実行方法:
-    python examples/02_buttons.py
+    python practice/02_buttons.py
 """
 
 from kivymd.app import MDApp

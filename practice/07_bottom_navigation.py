@@ -11,7 +11,7 @@
 - 画面切り替え
 
 実行方法:
-    python examples/07_bottom_navigation.py
+    python practice/07_bottom_navigation.py
 """
 
 from kivymd.app import MDApp

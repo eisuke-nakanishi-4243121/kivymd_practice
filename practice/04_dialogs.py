@@ -11,7 +11,7 @@
 - open() / dismiss()メソッド
 
 実行方法:
-    python examples/04_dialogs.py
+    python practice/04_dialogs.py
 """
 
 from kivymd.app import MDApp

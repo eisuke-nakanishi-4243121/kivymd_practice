@@ -10,7 +10,7 @@
 - タブ切り替え
 
 実行方法:
-    python examples/08_tabs.py
+    python practice/08_tabs.py
 """
 
 from kivymd.app import MDApp

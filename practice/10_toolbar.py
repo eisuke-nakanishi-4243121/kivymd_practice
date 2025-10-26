@@ -10,7 +10,7 @@
 - 左右アイコンボタンの配置
 
 実行方法:
-    python examples/10_toolbar.py
+    python practice/10_toolbar.py
 """
 
 from kivymd.app import MDApp

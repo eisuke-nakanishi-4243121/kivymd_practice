@@ -4,15 +4,15 @@
 """
 main.py - KivyMD練習プロジェクトのメインアプリケーション
 
-このアプリケーションは、examples/ ディレクトリ内の
+このアプリケーションは、practice/ ディレクトリ内の
 各サンプルファイルの説明を表示するランチャーです。
 
 実行方法:
     python main.py
 
 各サンプルを実際に実行するには:
-    python examples/01_basic_app.py
-    python examples/02_buttons.py
+    python practice/01_basic_app.py
+    python practice/02_buttons.py
     ... etc
 """
 
@@ -78,7 +78,7 @@ class KivyMDPracticeApp(MDApp):
             radius=[dp(10)]
         )
         info_label = MDLabel(
-            text="KivyMD練習プロジェクトへようこそ！\n\n以下のサンプルは examples/ ディレクトリにあります。\n各サンプルを実行するには:\n\npython examples/XX_xxxx.py\n\nの形式で実行してください。",
+            text="KivyMD練習プロジェクトへようこそ！\n\n以下のサンプルは practice/ ディレクトリにあります。\n各サンプルを実行するには:\n\npython practice/XX_xxxx.py\n\nの形式で実行してください。",
             size_hint_y=None,
             height=dp(140)
         )

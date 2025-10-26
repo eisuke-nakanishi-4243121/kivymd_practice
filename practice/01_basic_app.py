@@ -12,7 +12,7 @@
 - 日本語フォントの登録と使用
 
 実行方法:
-    python examples/01_basic_app.py
+    python practice/01_basic_app.py
 """
 
 from kivymd.app import MDApp

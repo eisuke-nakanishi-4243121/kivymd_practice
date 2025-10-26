@@ -11,7 +11,7 @@
 - 画像 + テキストのレイアウト
 
 実行方法:
-    python examples/03_cards.py
+    python practice/03_cards.py
 """
 
 from kivymd.app import MDApp

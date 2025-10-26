@@ -13,7 +13,7 @@
 注意: このサンプルは簡略版です。実際のアプリではより複雑な実装になります。
 
 実行方法:
-    python examples/06_navigation_drawer.py
+    python practice/06_navigation_drawer.py
 """
 
 from kivymd.app import MDApp

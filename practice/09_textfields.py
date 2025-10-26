@@ -11,7 +11,7 @@
 - バリデーション例（ログイン画面想定）
 
 実行方法:
-    python examples/09_textfields.py
+    python practice/09_textfields.py
 """
 
 from kivymd.app import MDApp

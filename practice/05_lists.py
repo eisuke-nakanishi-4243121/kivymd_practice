@@ -12,7 +12,7 @@
 - ScrollView対応
 
 実行方法:
-    python examples/05_lists.py
+    python practice/05_lists.py
 """
 
 from kivymd.app import MDApp
