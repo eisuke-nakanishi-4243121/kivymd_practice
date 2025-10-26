@@ -30,7 +30,7 @@ kivymd_practice/
 ├── assets/                          # アセット
 │   └── fonts/
 │       └── NotoSansCJK-Regular.ttc  # 日本語フォント
-└── examples/                        # KivyMDコンポーネント別サンプル
+└── practice/                        # KivyMDコンポーネント別サンプル
     ├── 01_basic_app.py              # 基本的なMDAppの構造
     ├── 02_buttons.py                # ボタン各種（MDRaisedButton, MDFlatButton等）
     ├── 03_cards.py                  # MDCard（カード表示）
@@ -136,8 +136,8 @@ cd /home/user/buildozer-venv/projects/kivymd_practice
 python main.py
 
 # 個別サンプルの実行
-python examples/01_basic_app.py
-python examples/02_buttons.py
+python practice/01_basic_app.py
+python practice/02_buttons.py
 # ... 以下同様
 ```
 
