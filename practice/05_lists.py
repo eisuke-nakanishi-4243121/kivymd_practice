@@ -17,7 +17,7 @@
 
 from kivymd.app import MDApp
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.list import MDList, OneLineListItem, TwoLineListItem, ThreeLineListItem, OneLineIconListItem, IconLeftWidget
+from kivymd.uix.list import MDList, OneLineListItem, TwoLineListItem, ThreeLineListItem
 from kivymd.uix.scrollview import MDScrollView
 from kivymd.uix.label import MDLabel
 from kivy.core.text import LabelBase
@@ -68,7 +68,6 @@ class ListsApp(MDApp):
         list_widget.add_widget(
             OneLineListItem(
                 text="1行リストアイテム",
-                font_name="Roboto",
                 on_press=lambda x: self.on_item_press("1行リストアイテム")
             )
         )
@@ -79,7 +78,6 @@ class ListsApp(MDApp):
         two_line_item = TwoLineListItem(
             text="2行リストアイテム",
             secondary_text="これは2行目のテキストです",
-            font_name="Roboto",
             on_press=lambda x: self.on_item_press("2行リストアイテム")
         )
         list_widget.add_widget(two_line_item)
@@ -88,38 +86,35 @@ class ListsApp(MDApp):
         three_line_item = ThreeLineListItem(
             text="3行リストアイテム",
             secondary_text="これは2行目のテキストです\nこれは3行目のテキストです",
-            font_name="Roboto",
             on_press=lambda x: self.on_item_press("3行リストアイテム")
         )
         list_widget.add_widget(three_line_item)
 
-        # アイコン付き1行リストアイテム
-        # IconLeftWidgetを使ってアイコンを追加
-        icon_item = OneLineIconListItem(
-            text="アイコン付きリスト",
-            font_name="Roboto",
-            on_press=lambda x: self.on_item_press("アイコン付きリスト")
+        # 通常の1行リストアイテム（アイコン無し版に変更）
+        # KivyMD 1.2.0ではアイコン付きリストの実装が複雑なため、
+        # シンプルなテキストのみのリストに変更
+        simple_item = OneLineListItem(
+            text="⭐ 絵文字付きリスト",
+            on_press=lambda x: self.on_item_press("絵文字付きリスト")
         )
-        icon_item.add_widget(IconLeftWidget(icon="star"))
-        list_widget.add_widget(icon_item)
+        list_widget.add_widget(simple_item)
 
         # 飲食店リストの例
+        # アイコンの代わりに絵文字を使用（KivyMD 1.2.0の制限回避）
         restaurants = [
-            ("ラーメン大将", "東京都渋谷区1-2-3", "restaurant"),
-            ("カフェモカ", "東京都渋谷区2-3-4", "coffee"),
-            ("カレーハウス", "東京都渋谷区3-4-5", "food"),
-            ("和食処 さくら", "東京都渋谷区4-5-6", "food-variant"),
-            ("イタリアン トマト", "東京都渋谷区5-6-7", "pasta"),
+            ("🍜 ラーメン大将", "東京都渋谷区1-2-3"),
+            ("☕ カフェモカ", "東京都渋谷区2-3-4"),
+            ("🍛 カレーハウス", "東京都渋谷区3-4-5"),
+            ("🍱 和食処 さくら", "東京都渋谷区4-5-6"),
+            ("🍝 イタリアン トマト", "東京都渋谷区5-6-7"),
         ]
 
-        for name, address, icon in restaurants:
-            item = TwoLineIconListItem(
+        for name, address in restaurants:
+            item = TwoLineListItem(
                 text=name,
                 secondary_text=address,
-                font_name="Roboto",
                 on_press=lambda x, n=name: self.on_restaurant_press(n)
             )
-            item.add_widget(IconLeftWidget(icon=icon))
             list_widget.add_widget(item)
 
         scroll_view.add_widget(list_widget)
