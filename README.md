@@ -41,7 +41,10 @@ kivymd_practice/
     ├── 08_tabs.py                   # MDTabs（タブ）
     ├── 09_textfields.py             # MDTextField（入力フィールド）
     ├── 10_toolbar.py                # MDTopAppBar（ツールバー）
-    └── 11_bottom_sheet.py           # MDBottomSheet（ボトムシート）
+    ├── 11_bottom_sheet.py           # MDBottomSheet（ボトムシート）
+    ├── 12_snackbar.py               # MDSnackbar（通知メッセージ）
+    ├── 13_spinner.py                # MDSpinner/プログレスバー（ローディング）
+    └── 14_switch_checkbox.py        # MDSwitch/MDCheckbox（スイッチ/チェックボックス）
 ```
 
 ## サンプル一覧
@@ -137,6 +140,36 @@ kivymd_practice/
   - `MDBottomSheetDragHandle`でのドラッグ操作
   - `open()` / `dismiss()`メソッド
   - カスタムコンテンツの配置（リスト、ボタン等）
+
+### 12_snackbar.py - スナックバー
+- **内容**: 通知メッセージの表示
+- **学習ポイント**:
+  - `MDSnackbar`の基本的な使い方
+  - シンプルな通知メッセージ
+  - アクション付きスナックバー
+  - 閉じるボタン付きスナックバー
+  - カラーカスタマイズ（成功/エラーメッセージ）
+  - 自動消去と手動消去
+
+### 13_spinner.py - スピナー/プログレスバー
+- **内容**: ローディング表示・進行状況の表示
+- **学習ポイント**:
+  - `MDSpinner`（円形スピナー）
+  - `MDProgressBar`（線形プログレスバー）
+  - `MDCircularProgressIndicator`（円形プログレス）
+  - 確定/不確定プログレス
+  - プログレスの更新とアニメーション
+  - 非同期処理中の表示
+
+### 14_switch_checkbox.py - スイッチ/チェックボックス
+- **内容**: ON/OFF切り替えとチェックボックス
+- **学習ポイント**:
+  - `MDSwitch`の基本的な使い方
+  - `MDCheckbox`の基本的な使い方
+  - 状態の取得と設定
+  - イベント処理（`on_active`）
+  - 設定画面の実装例
+  - 複数選択の管理
 
 ## 実行方法
 
