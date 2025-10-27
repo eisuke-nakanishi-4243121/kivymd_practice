@@ -40,7 +40,8 @@ kivymd_practice/
     ├── 07_bottom_navigation.py      # ボトムナビゲーション
     ├── 08_tabs.py                   # MDTabs（タブ）
     ├── 09_textfields.py             # MDTextField（入力フィールド）
-    └── 10_toolbar.py                # MDTopAppBar（ツールバー）
+    ├── 10_toolbar.py                # MDTopAppBar（ツールバー）
+    └── 11_bottom_sheet.py           # MDBottomSheet（ボトムシート）
 ```
 
 ## サンプル一覧
@@ -126,6 +127,16 @@ kivymd_practice/
   - タイトル表示
   - 左右アイコンボタンの配置
   - ナビゲーションドロワーとの連携
+
+### 11_bottom_sheet.py - ボトムシート
+- **内容**: 画面下部から表示されるシート
+- **学習ポイント**:
+  - `MDBottomSheet`の基本的な使い方
+  - モーダルボトムシート（画面を覆うタイプ）
+  - スタンダードボトムシート（背景操作可能タイプ）
+  - `MDBottomSheetDragHandle`でのドラッグ操作
+  - `open()` / `dismiss()`メソッド
+  - カスタムコンテンツの配置（リスト、ボタン等）
 
 ## 実行方法
 
